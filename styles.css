@@ -1,0 +1,188 @@
+body {
+    background-color: #D6EFD8; /* Light pastel green background */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #508D4E; /* Darker pastel green for header */
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.cart-icon {
+    float: right;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product {
+    background: #FFFFFF; /* White for product cards */
+    border: 1px solid #B7E0B6; /* Light pastel green border */
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column; /* Ensure button stays at bottom */
+    justify-content: space-between;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 5px;
+    height: auto; /* Ensure consistent height for images */
+}
+
+.add-button {
+    background-color: #80AF81; /* Pastel green for buttons */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+    align-self: center; /* Center button horizontally */
+}
+
+
+
+
+.add-button:hover {
+    background-color: #508D4E; /* Darker green on hover */
+}
+
+
+.cartTab {
+    display: none; /* Hide cart by default */
+    background: #D6EFD8; /* Light pastel green for cart background */
+    border: 1px solid #80AF81; /* Pastel green border */
+    border-radius: 12px;
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    width: 320px;
+    max-height: 500px;
+    overflow-y: auto; /* Scroll if content exceeds height */
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    animation: slide-in 0.3s ease;
+}
+
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cart h1 {
+    text-align: center;
+    color: #508D4E; /* Dark green header color */
+    border-bottom: 2px solid #B7E0B6; /* Light pastel green line below header */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #F0F8F0; /* Very light green for cart items */
+    border-radius: 8px;
+    border: 1px solid #B7E0B6; /* Light pastel green border */
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.cart-item:hover {
+    background-color: #E8F5E9; /* Lighter green on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.cart-item span {
+    margin: 0 10px;
+}
+
+.subtotal {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    border-top: 2px solid #B7E0B6;
+    color: #508D4E;
+}
+
+button {
+    cursor: pointer;
+}
+
+.cart-item button {
+    background-color: #80AF81; /* Pastel green for remove button */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.cart-item button:hover {
+    background-color: #508D4E; /* Darker green on hover */
+}
+
+#closeCartButton {
+    background-color: transparent;
+    border: none;
+    color: #508D4E; /* Dark green for close button */
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#closeCartButton:hover {
+    color: #80AF81; /* Light green on hover */
+}
+
+/* Subtle slide-in animation */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

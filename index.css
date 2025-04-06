@@ -1,0 +1,84 @@
+/* General Reset */
+body, h1, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #004d00; /* Dark Green Color */
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-right: 15px;
+}
+
+.navbar ul li:last-child {
+    margin-right: 0;
+}
+
+.navbar ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #009900; /* Mid Green for buttons */
+    border-radius: 30px; /* More rounded buttons */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #007a00; /* Darker green on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Main Content Styling */
+.main-content {
+    text-align: center;
+    padding: 50px;
+}
+
+.center-image {
+    width: 100%;  /* Make the image full width */
+    height: 600px;
+    margin: 0px;
+    border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+p.intro-text {
+    font-size: 20px; /* Make the paragraph text larger */
+    color: #34495e;
+    line-height: 1.6; /* Increase line height for readability */
+    margin-bottom: 30px;
+    max-width: auto; /* Limit width for better readability */
+    margin-left: 4px;
+    margin-right: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

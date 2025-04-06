@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriPlant Payment</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Complete Your Payment</h2>
+        <form id="payment-form">
+            <div class="form-group">
+                <label for="payment-method">Select Payment Method</label>
+                <div class="payment-options">
+                    <button type="button" class="payment-option" data-method="card">
+                        <i class="fas fa-credit-card"></i> Card
+                    </button>
+                    <button type="button" class="payment-option" data-method="paytm">
+                        <img src="p22.png" alt="Paytm" class="icon">
+                        Paytm
+                    </button>
+                    <button type="button" class="payment-option" data-method="gpay">
+                        <img src="gpay.png" alt="GPay" class="icon">
+                        GPay
+                    </button>
+                </div>
+            </div>
+
+            <div id="card-details" class="hidden">
+                <div class="form-group">
+                    <label for="card-name">Name on Card</label>
+                    <input type="text" id="card-name" name="card-name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9876 5432" required>
+                </div>
+                <div class="form-group expiry-cvv">
+                    <div>
+                        <label for="expiry">Expiry Date</label>
+                        <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+                    </div>
+                    <div>
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                    </div>
+                </div>
+            </div>
+
+            <div id="qr-code-section" class="hidden">
+                <p>Scan the QR Code below to pay via <span id="qr-method"></span>:</p>
+                <img id="qr-code" src="" alt="QR Code">
+                <button id="copy-payment-link" class="copy-btn">Copy Payment Link</button>
+            </div>
+
+            <button type="submit" class="pay-btn">
+                <span class="button-text">Proceed to Payment</span>
+                <div class="spinner hidden" id="spinner"></div>
+            </button>
+        </form>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>

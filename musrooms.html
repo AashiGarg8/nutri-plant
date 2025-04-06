@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Information</title>
+    <style>
+        /* General Reset */
+        body, h2, ul, li {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEyL3Jhd3BpeGVsX29mZmljZV80MF9hX21pbmltYWxzbV9pbGx1c3RyYXRpb25fb2Zfc2FnZV9ncmVlbl9sb2ZpX18zMDk0YTgwYi04ZDVhLTQxZGYtYWUxZi1jY2MwMmExZjgyMWYuanBn.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* Image Styling */
+        .header-image {
+            width: 500px;
+            max-width: 500px;
+            height: 500px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Container Styling */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: rgba(58, 58, 58, 0.8); /* Semi-transparent dark grey */
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            text-align: left;
+        }
+
+        /* Section Styling */
+        .plant-info {
+            margin-bottom: 40px;
+        }
+
+        .plant-info h2 {
+            font-size: 2.5em;
+            color: #81c784; /* Light green color for headings */
+            margin-bottom: 15px;
+            border-bottom: 3px solid #81c784;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .plant-info h3 {
+            font-size: 1.8em;
+            color: #aed581; /* Slightly lighter green for subheadings */
+            margin-bottom: 10px;
+            border-bottom: 2px solid #aed581;
+            display: inline-block;
+            padding-bottom: 3px;
+        }
+
+        .plant-info ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        .plant-info ul li {
+            font-size: 1.2em;
+            color: #d0d0d0; /* Light grey color for text */
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .plant-info ul li::before {
+            content: '•';
+            color: #81c784;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1.5em;
+        }
+
+        /* Hover Effects */
+        .plant-info ul li:hover {
+            color: #81c784;
+            cursor: pointer;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .plant-info h2 {
+                font-size: 2em;
+            }
+
+            .plant-info h3 {
+                font-size: 1.5em;
+            }
+
+            .plant-info ul li {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Image -->
+    <img src="https://greenboog.com/wp-content/uploads/2023/10/Mushrooms-Grow-on-Houseplants.jpg" alt="Plant Image" class="header-image">
+    
+    <div class="container">
+        <section class="plant-info">
+            <h2>Mushroom Cultivation</h2> <br>
+            
+            <h3>Advantages in Our Environment:</h3>
+            <ul>
+                <li>Sustainable Waste Recycling: Breaks down organic waste like straw and wood, reducing environmental waste.</li>
+                <li>Low Carbon Footprint: Requires minimal space, water, and resources, making it eco-friendly.</li>
+                <li>Soil Health Improvement: Post-harvest substrate can be used as nutrient-rich compost for soil.</li>
+                <li>Biodiversity Support: Supports ecosystem diversity, especially in permaculture practices.</li>
+            </ul>
+
+            <h3>Common Diseases:</h3>
+            <ul>
+                <li>Cobweb Mold (Dactylium): Gray, cobweb-like growth; smothers mushrooms.</li>
+                <li>Green Mold (Trichoderma): Green patches on substrate or caps; competes for nutrients.</li>
+                <li>Bacterial Blotch (Pseudomonas tolaasii): Yellow/brown lesions on caps; linked to high humidity.</li>
+                <li>Verticillium Spot (Dry Bubble): Misshapen, dry mushrooms; caused by Verticillium fungus.</li>
+            </ul>
+
+            <h3>Cures for Diseases:</h3>
+            <ul>
+                <li>Cobweb Mold: Improve air circulation, reduce humidity, use fungicide, maintain hygiene.</li>
+                <li>Green Mold: Remove affected areas, use sterile equipment, maintain substrate pasteurization.</li>
+                <li>Bacterial Blotch: Lower humidity, avoid overhead watering, remove infected mushrooms, disinfect surfaces.</li>
+                <li>Verticillium Spot: Remove affected mushrooms, sterilize environment, reduce humidity, use fungicide if needed.</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
