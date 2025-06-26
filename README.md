@@ -1,5 +1,5 @@
 # nutri-plant
-# NutriPlant
+
 
 NutriPlant is a web-based application designed to help users identify plant health and provide guidance for plant care. The project features a modern, user-friendly interface with a welcoming splash screen and smooth navigation to the main functionality.
 
